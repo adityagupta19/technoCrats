@@ -26,7 +26,10 @@ const Navbar = () => {
 				</div>
 				<ul className="hidden lg:flex lg:items-center lg:justify-end grow mr-4">
 					<li>
-						<a className="text-gray-600 dark:text-gray-300 hover:text-gray-100 px-4 py-2" href="#home">
+						<a
+							className="text-gray-600 dark:text-gray-300 hover:text-gray-100 px-4 py-2"
+							href="#home"
+						>
 							Abstract
 						</a>
 					</li>
@@ -147,7 +150,10 @@ const Solution = () => {
 };
 const Advantages = () => {
 	return (
-		<section id="adv" className="max-w-full mx-auto px-10 md:px-0 py-10 bgrnd layer4">
+		<section
+			id="adv"
+			className="max-w-full mx-auto px-10 md:px-0 py-10 bgrnd layer4"
+		>
 			<div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl ">
 				<div className="max-w-2xl mx-auto lg:text-center pt-16">
 					<h2 className="text-5xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
@@ -267,6 +273,42 @@ const Stack = () => {
 		</section>
 	);
 };
+const Footer = () => {
+	return (
+		<section className="py-10 nav">
+			<div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+				<div className="max-w-2xl mx-auto text-center">
+					<h2 className="text-5xl l font-bold text-gray-800 dark:text-gray-300">
+						Our Team
+					</h2>
+				</div>
+
+				<div className="mt-12 max-w-4xl mx-auto flex items-center justify-center flex-wrap">
+					<div className="dark:bg-gray-300 rounded-md h-20 w-48 my-4 mx-4">
+						<h3 className="text-3xl font-semibold text-black mt-4">
+							Aditya
+						</h3>
+					</div>
+					<div className="dark:bg-gray-300 rounded-md h-20 w-48 my-4 mx-4">
+						<h3 className="text-3xl font-semibold text-black mt-4">
+							Yatharth
+						</h3>
+					</div>
+					<div className="dark:bg-gray-300 rounded-md h-20 w-48 my-4 mx-4">
+						<h3 className="text-3xl font-semibold text-black mt-4">
+							Harsh
+						</h3>
+					</div>
+					<div className="dark:bg-gray-300 rounded-md h-20 w-48 my-4 mx-4">
+						<h3 className="text-3xl font-semibold text-black mt-4 ">
+							Pushpak
+						</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
 
 function App() {
 	return (
@@ -277,6 +319,7 @@ function App() {
 			<Solution />
 			<Advantages />
 			<Stack />
+			<Footer/>
 		</div>
 	);
 }
