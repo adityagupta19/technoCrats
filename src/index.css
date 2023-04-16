@@ -22,8 +22,19 @@ code {
 	background-color: #001220;
 }
 
+.icon{
+	width: 35px;
+	height: auto;
+	
+}
+.github{
+	fill: rgb(147, 157, 165);
+}
+.icon:hover{
+	fill: white;
+}
 .bgrnd {
-	aspect-ratio: 960/370;
+	aspect-ratio: 960/450;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
